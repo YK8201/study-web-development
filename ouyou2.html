@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <meta charset="UTF-8" />
+        <title>サンプルサイト</title>
+        <style>
+            input[type="number"] {
+            width: 250px; /* 必要に応じて適切な幅に調整してください */
+            padding: 5px; /* 適切な余白を設定 */
+            box-sizing: border-box; /* paddingとborderを含めて要素の幅を計算 */
+        }
+        </style>
+    </head>
+    <body>
+        <form action="ouyou2.php" method="post">
+            <p>身長 : <input id="height" type="number" name="height" min="0" max="3" placeholder="身長を入力 : 単位(m)" step="any"></p>
+            <p>体重 : <input id="weight" type="number" name="weight" min="0" max="600" placeholder="体重を入力 : 単位(kg)"></p>
+            <input type="submit" value="送信する">
+        </form>
+    </body>
+</html>
